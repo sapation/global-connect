@@ -1,0 +1,51 @@
+:root {
+    // Colors variables
+    --primary-color: hsl(216, 100%, 29%);
+    --secondary-color:  hsl(211, 90%, 47%);
+    --gray-color: hsl(0, 0%, 96%);
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 2%, 12%);
+    --light-gray: hsl(0, 0%, 83%);
+
+    // font family
+    --font-ff: 'Poppins', sans-serif;
+    --font-ff: 'Roboto', sans-serif;;
+
+    
+  --fs-1: calc(2.7rem + 1.38vw);
+  --fs-2: calc(2.6rem + .66vw);
+  --fs-3: 2.2rem;
+  --fs-4: 1.9rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.7rem;
+  --fs-7: 1.5rem;
+  --fs-8: 1.4rem;
+  --fs-9: 1.2rem;
+  --fs-10: 1.0rem;
+
+  --fw-700: 700;
+  --fw-500: 500;
+
+  /* Spacing */
+  --section-padding: 90px;
+
+  /* box shadow */
+  --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
+  --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08), 0 0 1.25rem hsla(216, 14%, 14%, 0.06);
+  --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
+
+  /* border radius */
+
+  --radius-circle: 50%;
+  --radius-pill: 100px;
+  --radius-10: 10px;
+  --radius-8: 8px;
+  --radius-6: 6px;
+
+  /* transitions */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --transition-3: 0.3s ease-in-out;
+}
+

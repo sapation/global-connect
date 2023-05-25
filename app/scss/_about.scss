@@ -1,0 +1,70 @@
+@use './util/' as u;
+
+.about {
+    background-color: var(--gray-color);
+
+    .container {
+        .about-content{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 20px;
+            border-radius: u.rem(8);
+
+            @include u.breakpoint-up(large){
+                flex-direction: row;
+             }
+
+            .about-text {
+                padding: 40px 20px;
+                border-radius: u.rem(8);
+                background-color: var(--white-color);
+
+                P {
+                    line-height: u.rem(30);
+                    letter-spacing: 0.0055em;
+                }
+                @include u.breakpoint-up(large){
+                    max-height: 500px;
+                    margin-block: auto;
+
+                    p{
+                        font-size: var(--fs-9);
+                        line-height: 37px;
+                    }
+                 }
+
+                 .about-title {
+                    font-size:var(--fs-6);
+                    font-style: italic;
+                    font-weight: var(--fw-500);
+                    padding-block-end: u.rem(20);
+                    margin-block-end: u.rem(10);
+                 }
+
+                .btn-secondary {
+                    margin-block: u.rem(20) u.rem(10);
+
+                    &:hover {
+                        background-color: var(--secondary-color);
+                        color: var(--white-color);
+                    }
+                }
+            }
+            .about-image {
+                border-radius: u.rem(8);
+
+                img{
+                    width: 100%;
+                    border-radius: u.rem(8);
+                }
+
+                @include u.breakpoint-up(large){
+                    img{
+                        width: u.rem(470);
+                    }
+                }
+            }
+        }
+    }
+}

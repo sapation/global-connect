@@ -1,0 +1,89 @@
+@use './util/' as u;
+
+.hero {
+    padding-block-start: calc(var(--section-padding) + 20px);
+    text-align: left;
+    background: linear-gradient(to right, rgba(0, 59, 148, 0.9), rgba(0, 59, 148,0.8)), url('../../images/hero-image.jpg') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    color: var(--white-color);
+
+
+    @include u.breakpoint-up(large){
+        padding-block-start: calc(var(--section-padding) + u.rem(60));
+    }
+
+    .container {
+        padding-inline: u.rem(16);
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            @include u.breakpoint-up(large){
+                align-items: flex-start;
+                justify-content: center;
+                gap: 40px;
+            }
+
+
+            .sub-title {
+                text-transform: uppercase;
+                font-weight: var(--fw-700);
+            }
+            .hero-title { 
+                color: var(--white-color);
+                text-transform: uppercase;
+                font-size: var(--fs-4);
+                text-align: center;
+                @include u.breakpoint-up(medium){
+                    font-size: var(--fs-2);
+                }
+
+                @include u.breakpoint-up(large){
+                    font-size: var(--fs-1);
+                    text-align: left;
+                }
+            }
+
+            .hero-text {
+                font-size: var(--fs-10);
+                text-transform: uppercase;
+                color: var(--white);
+               text-align: center;
+            }
+
+            .btn-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                margin-block-start: u.rem(20);
+                gap: 10px;
+
+                .btn-primary {
+                    &:is(:hover, :focus-visible) {
+                        border: 1px solid var(--secondary-color);
+                        background-color: transparent;
+                    }
+                }
+
+                .btn-secondary {
+                    color: var(--white-color);
+
+                    &:is(:hover, :focus-visible) {
+                        background-color: var(--secondary-color);
+                    }
+                }
+
+                @include u.breakpoint-up(large){
+                    .btn {
+                        padding: u.rem(10) u.rem(30);
+                    }
+                }
+            }
+        }
+    }
+  }

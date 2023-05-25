@@ -1,0 +1,50 @@
+@use './util/' as u;
+
+.teams-section {
+    background-color: var(--primary-color);
+
+    .container {
+        .section-title {
+            color: var(--white-color);
+            h2 {
+                &::after{
+                    background-color: var(--white-color);
+                }
+            }
+        }
+
+        .grid-list {
+            @include u.breakpoint-up(medium){
+                grid-template-columns: repeat(3, 1fr);
+                gap: u.rem(15);
+             }
+
+            @include u.breakpoint-up(large){
+                grid-template-columns: repeat(3, 1fr)
+            }
+            .team-member {
+                background-color: var(--white-color);
+                text-align: center;
+                max-width: u.rem(370);
+                padding: u.rem(10);
+                border-radius: u.rem(8);
+
+                h5{
+                    margin-block-start: u.rem(10);
+                    font-size: var(--fs-9);
+                }
+
+                p{
+                    color: #676565;
+                    font-weight: var(--fw-500);
+                }
+
+                img{
+                    width: 100%;
+                    max-height: u.rem(320);
+                    border-radius: u.rem(8);
+                }
+            }
+        }
+    }
+}
