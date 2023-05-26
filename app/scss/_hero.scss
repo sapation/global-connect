@@ -3,8 +3,6 @@
 .hero {
     padding-block-start: calc(var(--section-padding) + 20px);
     text-align: left;
-    background: linear-gradient(to right, rgba(0, 59, 148, 0.9), rgba(0, 59, 148,0.8)), url('../../images/hero-image.jpg') no-repeat top center;
-    background-size: cover;
     width: 100%;
     overflow: hidden;
     color: var(--white-color);
