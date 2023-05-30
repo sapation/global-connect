@@ -20,6 +20,7 @@ const overlay = document.querySelector("[data-overlay]");
 
 
 const toggleNav = function() {
+    console.log('Click on the link')
     navbar.classList.toggle('active');
     overlay.classList.toggle('active');
 }
@@ -38,3 +39,46 @@ window.addEventListener("scroll", function(){
         header.classList.add("active") :
         header.classList.remove("active");
 });
+
+/**
+ * Scroll reveal effect
+*/
+
+const sections = document.querySelectorAll("[data-section]");
+
+const reveal = () => {
+    for (let i = 0; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top < window.innerHeight / 2) {
+            sections[i].classList.add("active")
+        }
+    }
+}
+
+// reveal();
+window.addEventListener('scroll', reveal)
+
+
+// Accordion section
+const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
+const accordion = document.querySelectorAll('[data-accordion]');
+
+for (let i = 0; i < accordionBtn.length; i++) {
+
+    accordionBtn[i].addEventListener('click', function() {
+
+        const clickedBtn = this.nextElementSibling.classList.contains('active');
+
+        for (let i = 0; i < accordion.length; i++) {
+
+            if (clickedBtn) break;
+
+            if(accordion[i].classList.contains('active')) {
+                accordion[i].classList.remove('active')
+                accordionBtn[i].classList.remove('active')
+            }
+        }
+
+        this.nextElementSibling.classList.toggle('active');
+        this.classList.toggle('active');
+    })
+}

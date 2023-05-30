@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gcc IT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <header class="header " data-header>
+      <div class="container">
+        <a href="index.html" class="brand">
+            <img src="./images/logo.png" alt="" srcset="">
+        </a>
+        <button class="nav-open-btn" aria-label="open-menu" data-nav-toggler>
+            <img src="./images/menu-w.png" alt="">
+        </button>
+        <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="index.html" class="logo">
+                <img
+                  src="./images/logo-black.png"
+                  class="logo-light"
+                  width="74"
+                  height="24"
+                  alt="GCC home"
+                />
+              </a>
+    
+              <button
+                class="nav-close-btn"
+                aria-label="close-menu"
+                data-nav-toggler
+              >
+                <img src="./images/close.png" alt="" srcset="">
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+              <li><a href="#" class="navbar-link">Home</a></li>
+              <li><a href="#" class="navbar-link">About</a></li>
+              <li><a href="#" class="navbar-link">Contact</a></li>
+            </ul>
+
+            <div class="navbar-bottom">
+                <a href="" class="btn btn-secondary">Login</a>
+                <a href="" class="btn btn-primary">SignUp</a>
+            </div>
+
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!--
+        #Hero section
+     -->
+     <section class="section hero has-bg-image" style="background: linear-gradient(to right, rgba(0, 59, 148, 0.9), rgba(0, 59, 148,0.8)), url('./images/hero-image.jpg') no-repeat top center;background-size: cover;" aria-label="home">
+        <div class="container">
+            <div class="hero-content student-page">
+                <h1 class="h1 hero-title">IT <br> Consultancy</h1>
+            </div>
+        </div>
+    </section>
+
+     <!-- 
+        #About section
+     -->
+     <section class="section about" aria-label="about" data-section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Eligibility</h2>
+            </div>
+            <div class="about-content">
+               
+                <div class="about-text">
+                    <p>
+                        Are you a high achieving student seeking a master’s or PhD in the uS or Canada. we are understand the challenges and the importance of having a solid support system to navigate the application process and achieve your academic goals .
+                        Students who want to study master’s should already finished their first degree studies in an accredited university. 
+                        Student who wants to pursue PhD should already has completed their master degree in their desire  program at an accredited university in the world.
+                     </p>
+                     <p>And also for propective candidates for Masters degree, In order to be able to secure a scholaship the candidate should have graduated with atleast a second class upper division.</p>
+                     <a href="#" class="btn btn-secondary">Apply Now</a>
+                </div>
+                <div class="about-image" style="--width:470; --height:580">
+                    <img src="./images/student-page.jpg" width="470" height="580" alt="about image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        #Recommendation section
+     -->
+
+     <section class="section documents">
+        <div class="container">
+            <div class="section-title">
+                <h2>Require Documents</h2>
+            </div>
+            <div class="documents-section">
+                
+                <div class="documents-list">
+                    <div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Accademics Certificate(s)</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum ipsa fuga iste nemo totam maxime reprehenderit obcaecati! Porro, cumque.</p>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Transcript(s)</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis cumque ad pariatur nihil error iste, consectetur quaerat nulla laborum.</p>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">English Proficiency</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis cumque ad pariatur nihil error iste, consectetur quaerat nulla laborum.</p>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Valid Passport</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti necessitatibus quibusdam voluptate labore obcaecati animi molestiae aperiam quisquam ab.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Birth Certificate</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti necessitatibus quibusdam voluptate labore obcaecati animi molestiae aperiam quisquam ab.</p>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Statement of Purpose(SOP)</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis voluptatibus soluta dolorum, voluptas ea sed quisquam rem minus vero.</p>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Curriculum Vitae</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis voluptatibus soluta dolorum, voluptas ea sed quisquam rem minus vero.</p>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <button class="document-menu" data-accordion-btn>
+                                <p class="document-title">Passport Picture</p>
+                                <div class="document-action">
+                                    <img src="./images/downarrow.png" width="20" class="open-arrow" alt="down arrow" srcset="">
+                                    <img src="./images/uparrow.png" width="20" class="close-arrow" alt="down arrow" srcset="">
+                                </div>
+                            </button>
+                            <div class="document-info" data-accordion>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eveniet voluptate est reprehenderit corrupti vitae autem neque repellat odio quibusdam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container grid-list">
+                <div class="footer-item">
+                    <img src="./images/logo.png" alt="logo">
+                    <p class="company">
+                        Global capital connect is an international body located in US.
+                    </p>
+                </div>
+
+                <div class="footer-item">
+                    <h6>Links</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h6>Services</h6>
+                    <ul>
+                        <li><a href="index.html">Student Admission</a></li>
+                        <li><a href="nurse.html">Nurses Recruitment</a></li>
+                        <li><a href="it.html">IT Consultancy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+           <div class="container grid-list">
+                <div class="footer-bottom-copy">
+                    <p>@2023 All right reserved</p>
+                </div>
+                <div class="footer-bottom-condition">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-bottom-so">
+                    <a href="">
+                        <img src="./images/facebook.png" alt="facebook">
+                    </a>
+                    <a href="">
+                        <img src="./images/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="" >
+                        <img src="./images/instagram.png" alt="instagram">
+                    </a>
+                </div>
+           </div>
+        </div>
+     </footer>
+
+    <script src="./app/js/script.js"></script>
+</body>
+</html>

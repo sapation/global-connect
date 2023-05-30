@@ -1,0 +1,110 @@
+@use './util/' as u;
+
+.hero {
+
+    .container {
+
+        .student-page {
+            align-items: center;
+
+            .hero-title {
+                text-align: center;
+            }
+        }
+
+      
+    }
+}
+
+.about {
+    .container {
+        .about-content {
+            flex-direction: column-reverse;
+
+            @include u.breakpoint-up(large){
+                flex-direction: row;
+
+                .about-text {
+                    padding: u.rem(60) u.rem(56);
+                    max-height: unset;
+
+                    .btn-secondary {
+                        padding: u.rem(15) u.rem(35);
+                    }
+                 }
+             }
+        }
+    }
+}
+
+.documents {
+
+    .container {
+
+        .documents-section {
+
+            .documents-list {
+                @include u.breakpoint-up(large){
+                    display: flex;
+                    gap: 20px;
+                }
+                .document-item {
+                    border: 1px solid var(--light-gray);
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin-block-end: 10px;
+                    .document-menu {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .close-arrow {
+                            display: none;
+                        }
+
+                        &.active {
+                            border-bottom: 1px solid var(--light-gray);
+                            .open-arrow {
+                                display: none;
+                            }
+
+                            .close-arrow{
+                                display: block;
+                            }
+                        }
+
+                        .document-title {
+                            color: var(--secondary-color);
+                            font-size: var(--fs-10);
+                        }
+
+                        .document-action {
+                            font-size: 14px;
+                            img{
+                                width: 10px;
+                            }
+
+                        }
+                    }
+
+                    .document-info {
+                        max-height: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                        transition: 0.5s ease-in-out;
+
+                        &.active {
+                            max-height: 148px;
+                            visibility: visible;
+                        }
+
+                        p{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

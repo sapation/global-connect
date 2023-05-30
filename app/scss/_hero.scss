@@ -14,7 +14,7 @@
 
     .container {
         padding-inline: u.rem(16);
-
+       
         .hero-content {
             display: flex;
             flex-direction: column;
@@ -48,6 +48,13 @@
                 }
             }
 
+              
+        @include u.breakpoint-up(large){
+            .student-page {
+                align-items: center;
+            }
+        }
+
             .hero-text {
                 font-size: var(--fs-10);
                 text-transform: uppercase;
@@ -63,7 +70,7 @@
 
                 .btn-primary {
                     &:is(:hover, :focus-visible) {
-                        border: 1px solid var(--secondary-color);
+                        border: 2px solid var(--secondary-color);
                         background-color: transparent;
                     }
                 }

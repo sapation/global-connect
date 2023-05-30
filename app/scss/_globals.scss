@@ -175,3 +175,14 @@ body.nav-active {overflow: hidden;}
     display: grid;
     gap: u.rem(25)
 }
+
+[data-section]>* {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--transition-3);
+  }
+  
+  [data-section].active>* {
+    opacity: 1;
+    transform: translateY(0);
+  }
