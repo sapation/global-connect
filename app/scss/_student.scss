@@ -46,13 +46,13 @@
             .documents-list {
                 @include u.breakpoint-up(large){
                     display: flex;
-                    gap: 20px;
+                    gap: u.rem(20);
                 }
                 .document-item {
                     border: 1px solid var(--light-gray);
-                    padding: 20px;
-                    border-radius: 8px;
-                    margin-block-end: 10px;
+                    padding: u.rem(20);
+                    border-radius: u.rem(8);
+                    margin-block-end: u.rem(10);
                     .document-menu {
                         width: 100%;
                         display: flex;
@@ -101,10 +101,25 @@
 
                         p{
                             margin-top: 10px;
+                            color: var(--text-gray);;
                         }
                     }
                 }
             }
+        }
+    }
+}
+
+.call-to-action {
+    padding: 0px u.rem(20) u.rem(40);
+
+    .apply-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn-secondary {
+            padding: u.rem(10) u.rem(40);
         }
     }
 }

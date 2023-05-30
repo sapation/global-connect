@@ -1,0 +1,56 @@
+@use './util/' as u;
+
+.input-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    @include u.breakpoint-up(large){
+        flex-wrap: unset;
+        .input-group {
+            flex-basis: 100%;
+    
+            .input-field {
+                width: 100%;
+            }
+        }
+    }
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-block: u.rem(20);
+
+    label{
+        font-style: normal;
+        font-weight: 400;
+        font-size: u.rem(18);
+        line-height: u.rem(28);
+        letter-spacing: -0.02em;
+        color: rgba(0, 0, 0, 0.28);
+    }
+
+
+    .input-field, textarea {
+        width: 80%;
+        border: u.rem(1) solid rgba(0, 0, 0, 0.28);
+        border-radius: u.rem(8);
+        padding: u.rem(10) u.rem(20);
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.5);
+        
+        &::placeholder {
+            font-size: u.rem(16);
+            color: rgba(0, 0, 0, 0.28);
+        }
+
+        &:is(:active, :focus-visible) {
+            outline: none;
+            border: 1px solid var(--primary-color);
+        }
+    }
+}
